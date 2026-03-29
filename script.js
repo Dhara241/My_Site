@@ -7,7 +7,7 @@ function getWeather() {
   }
 
   const apiKey = "7e0ae998334646a784445254253012";
-  const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=yes`;
+  const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=yes`;
 
   fetch(url)
     .then(response => response.json())
